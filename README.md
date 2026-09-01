@@ -1,8 +1,8 @@
-# Hertie School's 2025 Summer R and Math Bootcamp
+# Hertie School's 2026 Summer R Bootcamp
 
-Taught by [Jackson Luckey](http://www.jacksonmluckey.com) at the [Hertie School in Berlin](https://www.hertie-school.org/en/) in summer 2025.
+Taught by [Linus Hagemann](http://linushagemann.de) at the [Hertie School in Berlin](https://www.hertie-school.org/en/) in summer 2026.
 
-Before the first day, please install [R](01-overview/bootcamp-overview.html#installing-r) and [RStudio](01-overview/bootcamp-overview.html#installing-rstudio).
+Before the first day, please install `R` and `RStudio`, as well as `git`. I prepared a guide you can follow [here](IDS_Software_Setup.pdf).
 
 ## Slides
 
