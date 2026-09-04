@@ -7,7 +7,7 @@ format: revealjs
 
 ## The Console in RStudio
 
-![The red box is the console where you can freely run R code. I included a few examples of using R + RStudio as a calculator. `==` means equal to.](images/r-as-calculator-01.png)
+![The red box is the console (also known as REPL) where you can run R code interatively.](images/r-as-calculator-01.png)
 
 ## R Operators
 
@@ -58,22 +58,12 @@ R includes many operators, including
 3897145 / 891.3
 ```
 
-# Objects
+# Variables (/Objects)
 
-## What is an object in R?
-
-An object in R is a named container that stores data, results, or functions.
-
-![You can think of an object as a box with a name.](images/r-objects-contents-name-illustration.png)
-
-Image Source: Data Analysis for Social Science by Elena Llaudet and Kosuke Imai
-
-## How to create an object
-
-Objects are assigned to names using the assignment operator `<-`. For example
+Variables are values assigned to names using the assignment operator `<-`. For example
 
 ```{r}
-name <- "Jackson M Luckey"
+name <- "Introduction to Data Science"
 year <- 2025
 two_plus_two <- 2 + 2
 two_times_two <- 2 * 2
