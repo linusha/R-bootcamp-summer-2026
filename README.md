@@ -31,12 +31,15 @@ If you missed the bootcamp or want to revisit some of the content, you can find 
 
 During the bootcamp, I recommended the cheasheets on [`ggplot`](https://rstudio.github.io/cheatsheets/data-visualization.pdf) & [`dplyr`](https://rstudio.github.io/cheatsheets/data-transformation.pdf). More useful cheatsheets [here](https://rstudio.github.io/cheatsheets/).
 
-## Exercises
+## Exercises ✍️
 
-The prerequisites (unless stated otherwise) are the [Intro to Data Visualization](04-intro-to-data-viz/intro-to-data-viz.html) and [Working with Dataframes with `dplyr`](05-dplyr/working-with-dataframes-with-dplyr.html) slides.
+> [!TIP]
+> We only worked on the third task on the weekend, but the others are great practice material during the first weeks of IDS. Note that the first exercise is easier than the other two.
 
-- [`dplyr` and `ggplot` with NYC Flights](Exercises/nyc-flights/nyc-flights.qmd): Practice using `dplyr` and `ggplot2` with a dataset of all flights departing NYC in 2013.
-- [Leader Assassination as a Natural Experiment](Exercises/leader-assassination/leader-assassination.qmd): Practice using `dplyr` and `ggplot2` to investigate the effects of leader assassinations on democracy and war. Adapted from [Quantiative Social Science: An Introduction with Tidyverse](https://press.princeton.edu/books/paperback/9780691222288/quantitative-social-science).
+1. [`dplyr` and `ggplot` with NYC Flights](Exercises/nyc-flights/nyc-flights.qmd): Practice using `dplyr` and `ggplot2` with a dataset of all flights departing NYC in 2013.
+2. [Leader Assassination as a Natural Experiment](Exercises/leader-assassination/leader-assassination.qmd): Practice using `dplyr` and `ggplot2` to investigate the effects of leader assassinations on democracy and war. Adapted from [Quantiative Social Science: An Introduction with Tidyverse](https://press.princeton.edu/books/paperback/9780691222288/quantitative-social-science).
+3. [UN Votes of Russia and the US](Exercises/un-voting/un-voting.qmd): Practice using `dplyr` and `ggplot2` to investigate how UN votes between Russia, the USA, and the world moved from after WW2, through the cold war until after "the end of history". Adapted from [Quantiative Social Science: An Introduction with Tidyverse](https://press.princeton.edu/books/paperback/9780691222288/quantitative-social-science).
+
 
 ## Sources & Acknowledgements
 
