@@ -48,6 +48,15 @@ R includes many operators, including
 1. Calculate the number of hours in a year.
 2. Calculate the population density of Berlin (Let's say 3897145 persons in 891.3 $km^2$)
 
+
+
+
+
+
+
+
+
+
 ## Solution
 
 ```{r}
@@ -139,7 +148,8 @@ You can manipulate vectors just like individual numbers. For example, we can get
 
 ```{r}
 seconds_in_hour <- 60 * 60
-(years - 1970) * hours_in_year * seconds_in_hour
+
+seconds_since_1970_vec <- (years - 1970) * hours_in_year * seconds_in_hour
 ```
 
 ## Exercise
@@ -259,8 +269,18 @@ penguins$body_mass
 
 What is the minimum, mean, and maximum body mass of a penguin in the `penguins` dataset?
 
+
 ```{r}
-min(penguins$body_mass)
+min(penguins$body_mass, na.rm = TRUE)
 mean(penguins$body_mass)
 max(penguins$body_mass)
 ```
+
+
+
+
+
+
+
+
+

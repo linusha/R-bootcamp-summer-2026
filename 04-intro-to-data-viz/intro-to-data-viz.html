@@ -266,14 +266,31 @@ Linus Hagemann
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">y =</span> flipper_length_mm, <span class="at">color =</span> species)) <span class="sc">+</span></span>
 <span id="cb4-2"><a href=""></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="intro-to-data-viz_files/figure-revealjs/unnamed-chunk-5-1.png" width="960"></p>
+</figure>
 </div>
-<img data-src="intro-to-data-viz_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a>penguin_plot_default <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">y =</span> flipper_length_mm, <span class="at">color =</span> species))</span>
+<span id="cb5-2"><a href=""></a></span>
+<span id="cb5-3"><a href=""></a>penguin_plot_default <span class="sc">+</span> </span>
+<span id="cb5-4"><a href=""></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="intro-to-data-viz_files/figure-revealjs/unnamed-chunk-5-2.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
 <section id="geometries-3" class="slide level2">
 <h2>Geometries</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">y =</span> flipper_length_mm, <span class="at">color =</span> island)) <span class="sc">+</span></span>
-<span id="cb5-2"><a href=""></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">y =</span> flipper_length_mm, <span class="at">color =</span> island)) <span class="sc">+</span></span>
+<span id="cb6-2"><a href=""></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="intro-to-data-viz_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
@@ -301,16 +318,16 @@ Linus Hagemann
 <section id="geom_bar-example" class="slide level2">
 <h2><code>geom_bar()</code> Example</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> species)) <span class="sc">+</span></span>
-<span id="cb6-2"><a href=""></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> species)) <span class="sc">+</span></span>
+<span id="cb7-2"><a href=""></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="intro-to-data-viz_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
 <section id="second-geom_bar-example" class="slide level2">
 <h2>Second <code>geom_bar()</code> Example</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> island, <span class="at">fill =</span> species)) <span class="sc">+</span></span>
-<span id="cb7-2"><a href=""></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href=""></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> island, <span class="at">fill =</span> species)) <span class="sc">+</span></span>
+<span id="cb8-2"><a href=""></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="intro-to-data-viz_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
@@ -326,8 +343,8 @@ Linus Hagemann
 <section id="geom_histogram-example" class="slide level2">
 <h2><code>geom_histogram()</code> Example</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href=""></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">fill =</span> species)) <span class="sc">+</span></span>
-<span id="cb8-2"><a href=""></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href=""></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">fill =</span> species)) <span class="sc">+</span></span>
+<span id="cb9-2"><a href=""></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="intro-to-data-viz_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"></section>
@@ -338,8 +355,8 @@ Linus Hagemann
 <section id="geom_density-example" class="slide level2">
 <h2><code>geom_density()</code> Example</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href=""></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">fill =</span> species)) <span class="sc">+</span></span>
-<span id="cb9-2"><a href=""></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href=""></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">fill =</span> species)) <span class="sc">+</span></span>
+<span id="cb10-2"><a href=""></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="intro-to-data-viz_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
@@ -350,9 +367,9 @@ Linus Hagemann
 <section id="geom_smooth-example" class="slide level2">
 <h2><code>geom_smooth()</code> Example</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href=""></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">y =</span> flipper_length_mm, <span class="at">color =</span> species)) <span class="sc">+</span></span>
-<span id="cb10-2"><a href=""></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb10-3"><a href=""></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="co"># linear regression</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href=""></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">y =</span> flipper_length_mm, <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb11-2"><a href=""></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb11-3"><a href=""></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="co"># linear regression</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="intro-to-data-viz_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"></section>
@@ -360,26 +377,26 @@ Linus Hagemann
 <h2>Labels</h2>
 <p>You can label your plot with <code>labs()</code> like</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href=""></a><span class="fu">labs</span>(</span>
-<span id="cb11-2"><a href=""></a>    <span class="at">title =</span> <span class="st">"The plot title"</span>,</span>
-<span id="cb11-3"><a href=""></a>    <span class="at">x =</span> <span class="st">"The x-axis label"</span>,</span>
-<span id="cb11-4"><a href=""></a>    <span class="at">y =</span> <span class="st">"The y=axis label"</span>,</span>
-<span id="cb11-5"><a href=""></a>    <span class="at">caption =</span> <span class="st">"The plot caption"</span></span>
-<span id="cb11-6"><a href=""></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href=""></a><span class="fu">labs</span>(</span>
+<span id="cb12-2"><a href=""></a>    <span class="at">title =</span> <span class="st">"The plot title"</span>,</span>
+<span id="cb12-3"><a href=""></a>    <span class="at">x =</span> <span class="st">"The x-axis label"</span>,</span>
+<span id="cb12-4"><a href=""></a>    <span class="at">y =</span> <span class="st">"The y=axis label"</span>,</span>
+<span id="cb12-5"><a href=""></a>    <span class="at">caption =</span> <span class="st">"The plot caption"</span></span>
+<span id="cb12-6"><a href=""></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="example-of-labels" class="slide level2">
 <h2>Example of Labels</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href=""></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">y =</span> flipper_length_mm, <span class="at">color =</span> species)) <span class="sc">+</span></span>
-<span id="cb12-2"><a href=""></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb12-3"><a href=""></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb12-4"><a href=""></a>  <span class="fu">labs</span>(</span>
-<span id="cb12-5"><a href=""></a>    <span class="at">title =</span> <span class="st">"Relationship Between Body Mass and Flipper Length of Penguins"</span>,</span>
-<span id="cb12-6"><a href=""></a>    <span class="at">x =</span> <span class="st">"Body Mass (grams)"</span>,</span>
-<span id="cb12-7"><a href=""></a>    <span class="at">y =</span> <span class="st">"Flipper Length (mm)"</span>,</span>
-<span id="cb12-8"><a href=""></a>    <span class="at">caption =</span> <span class="st">"Body mass and flipper length are positively correlated for all three species of penguin"</span></span>
-<span id="cb12-9"><a href=""></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href=""></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">y =</span> flipper_length_mm, <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb13-2"><a href=""></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb13-3"><a href=""></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb13-4"><a href=""></a>  <span class="fu">labs</span>(</span>
+<span id="cb13-5"><a href=""></a>    <span class="at">title =</span> <span class="st">"Relationship Between Body Mass and Flipper Length of Penguins"</span>,</span>
+<span id="cb13-6"><a href=""></a>    <span class="at">x =</span> <span class="st">"Body Mass (grams)"</span>,</span>
+<span id="cb13-7"><a href=""></a>    <span class="at">y =</span> <span class="st">"Flipper Length (mm)"</span>,</span>
+<span id="cb13-8"><a href=""></a>    <span class="at">caption =</span> <span class="st">"Body mass and flipper length are positively correlated for all three species of penguin"</span></span>
+<span id="cb13-9"><a href=""></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="example-of-labels-1" class="slide level2">
@@ -393,18 +410,18 @@ Linus Hagemann
 <section id="theming-example" class="slide level2">
 <h2>Theming Example</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href=""></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">y =</span> flipper_length_mm, <span class="at">color =</span> species)) <span class="sc">+</span></span>
-<span id="cb13-2"><a href=""></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb13-3"><a href=""></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb13-4"><a href=""></a>  <span class="fu">labs</span>(</span>
-<span id="cb13-5"><a href=""></a>    <span class="at">title =</span> <span class="st">"Relationship Between Body Mass and Flipper Length of Penguins"</span>,</span>
-<span id="cb13-6"><a href=""></a>    <span class="at">x =</span> <span class="st">"Body Mass (grams)"</span>,</span>
-<span id="cb13-7"><a href=""></a>    <span class="at">y =</span> <span class="st">"Flipper Length (mm)"</span>,</span>
-<span id="cb13-8"><a href=""></a>    <span class="at">color =</span> <span class="st">"Species"</span>,</span>
-<span id="cb13-9"><a href=""></a>    <span class="at">caption =</span> <span class="st">"Body mass and flipper length are positively correlated for all three species of penguin"</span></span>
-<span id="cb13-10"><a href=""></a>  ) <span class="sc">+</span></span>
-<span id="cb13-11"><a href=""></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb13-12"><a href=""></a>  <span class="fu">theme</span>(<span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href=""></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">y =</span> flipper_length_mm, <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb14-2"><a href=""></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb14-3"><a href=""></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb14-4"><a href=""></a>  <span class="fu">labs</span>(</span>
+<span id="cb14-5"><a href=""></a>    <span class="at">title =</span> <span class="st">"Relationship Between Body Mass and Flipper Length of Penguins"</span>,</span>
+<span id="cb14-6"><a href=""></a>    <span class="at">x =</span> <span class="st">"Body Mass (grams)"</span>,</span>
+<span id="cb14-7"><a href=""></a>    <span class="at">y =</span> <span class="st">"Flipper Length (mm)"</span>,</span>
+<span id="cb14-8"><a href=""></a>    <span class="at">color =</span> <span class="st">"Species"</span>,</span>
+<span id="cb14-9"><a href=""></a>    <span class="at">caption =</span> <span class="st">"Body mass and flipper length are positively correlated for all three species of penguin"</span></span>
+<span id="cb14-10"><a href=""></a>  ) <span class="sc">+</span></span>
+<span id="cb14-11"><a href=""></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb14-12"><a href=""></a>  <span class="fu">theme</span>(<span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="theming-example-1" class="slide level2">

@@ -81,6 +81,11 @@ ggplot(penguins, aes(x = body_mass_g, y = flipper_length_mm)) +
 ```{r}
 ggplot(penguins, aes(x = body_mass_g, y = flipper_length_mm, color = species)) +
   geom_point()
+
+penguin_plot_default <- ggplot(penguins, aes(x = body_mass_g, y = flipper_length_mm, color = species))
+
+penguin_plot_default + 
+  geom_point()
 ```
 
 ## Geometries

@@ -361,25 +361,23 @@ Linus Hagemann
 <p>You can manipulate vectors just like individual numbers. For example, we can get the number of seconds since 1970 (a common way of storing dates/time in computers) with</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href=""></a>seconds_in_hour <span class="ot">&lt;-</span> <span class="dv">60</span> <span class="sc">*</span> <span class="dv">60</span></span>
-<span id="cb21-2"><a href=""></a>(years <span class="sc">-</span> <span class="dv">1970</span>) <span class="sc">*</span> hours_in_year <span class="sc">*</span> seconds_in_hour</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 1576800000 1608336000 1639872000 1671408000 1702944000 1734480000</code></pre>
-</div>
+<span id="cb21-2"><a href=""></a></span>
+<span id="cb21-3"><a href=""></a>seconds_since_1970_vec <span class="ot">&lt;-</span> (years <span class="sc">-</span> <span class="dv">1970</span>) <span class="sc">*</span> hours_in_year <span class="sc">*</span> seconds_in_hour</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="exercise-1" class="slide level2">
 <h2>Exercise</h2>
 <p>Calculate the population density of Berlin for every year represented in <code>berlin_pop</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href=""></a><span class="co"># Population of Berlin in 1980, 1990, 2000, 2010, 2020</span></span>
-<span id="cb23-2"><a href=""></a>years      <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1980</span>,    <span class="dv">1990</span>,    <span class="dv">2000</span>,    <span class="dv">2010</span>,    <span class="dv">2020</span>)</span>
-<span id="cb23-3"><a href=""></a>berlin_pop <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">3048759</span>, <span class="dv">3433695</span>, <span class="dv">3382169</span>, <span class="dv">3460725</span>, <span class="dv">3664088</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href=""></a><span class="co"># Population of Berlin in 1980, 1990, 2000, 2010, 2020</span></span>
+<span id="cb22-2"><a href=""></a>years      <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1980</span>,    <span class="dv">1990</span>,    <span class="dv">2000</span>,    <span class="dv">2010</span>,    <span class="dv">2020</span>)</span>
+<span id="cb22-3"><a href=""></a>berlin_pop <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">3048759</span>, <span class="dv">3433695</span>, <span class="dv">3382169</span>, <span class="dv">3460725</span>, <span class="dv">3664088</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="solution-2" class="slide level2">
 <h2>Solution</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href=""></a>berlin_pop <span class="sc">/</span> berlin_area</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href=""></a>berlin_pop <span class="sc">/</span> berlin_area</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3420.576 3852.457 3794.647 3882.784 4110.948</code></pre>
 </div>
@@ -389,7 +387,7 @@ Linus Hagemann
 <h2>Indexing Vectors</h2>
 <p>You can access elements inside a vector using <code>[]</code>. For example, to get the first element in <code>cities</code> (“Berlin”), do</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href=""></a>cities[<span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href=""></a>cities[<span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "Berlin"</code></pre>
 </div>
@@ -403,7 +401,7 @@ Linus Hagemann
 <section id="solution-3" class="slide level2">
 <h2>Solution</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href=""></a>berlin_pop[<span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href=""></a>berlin_pop[<span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3664088</code></pre>
 </div>
@@ -425,14 +423,14 @@ Linus Hagemann
 <h2>Functions</h2>
 <p>For example, we can find the average population of Berlin between 1980 and 2020 by either doing</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href=""></a><span class="fu">mean</span>(berlin_pop)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href=""></a><span class="fu">mean</span>(berlin_pop)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3397887</code></pre>
 </div>
 </div>
 <p>or</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href=""></a><span class="fu">sum</span>(berlin_pop) <span class="sc">/</span> <span class="fu">length</span>(berlin_pop)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href=""></a><span class="fu">sum</span>(berlin_pop) <span class="sc">/</span> <span class="fu">length</span>(berlin_pop)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3397887</code></pre>
 </div>
@@ -445,13 +443,13 @@ Linus Hagemann
 <section id="solution-4" class="slide level2">
 <h2>Solution</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href=""></a><span class="fu">min</span>(berlin_pop) <span class="sc">/</span> berlin_area</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href=""></a><span class="fu">min</span>(berlin_pop) <span class="sc">/</span> berlin_area</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3420.576</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href=""></a><span class="fu">max</span>(berlin_pop) <span class="sc">/</span> berlin_area</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href=""></a><span class="fu">max</span>(berlin_pop) <span class="sc">/</span> berlin_area</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 4110.948</code></pre>
 </div>
@@ -467,11 +465,11 @@ Linus Hagemann
 <p>Dataframes are objects that have columns (conventionally variables) and rows (conventionally observations). Think of a spreadsheet like Excel or Google Sheets.</p>
 <p>R has several dataframes, including <code>penguins</code>, built in. We can load penguins into R with</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href=""></a>penguins <span class="ot">&lt;-</span> penguins</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href=""></a>penguins <span class="ot">&lt;-</span> penguins</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>and view the dataframe with</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href=""></a><span class="fu">View</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href=""></a><span class="fu">View</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="loading-penguins" class="slide level2">
@@ -487,7 +485,7 @@ Linus Hagemann
 <p>You can access dataframe columns as vectors using <code>$</code>.</p>
 <p>For example, we can get <code>body_mass</code> from <code>penguins</code> with</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href=""></a>penguins<span class="sc">$</span>body_mass</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href=""></a>penguins<span class="sc">$</span>body_mass</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  [1] 3750 3800 3250   NA 3450 3650 3625 4675 3475 4250 3300 3700 3200 3800 4400
  [16] 3700 3450 4500 3325 4200 3400 3600 3800 3950 3800 3800 3550 3200 3150 3950
@@ -519,15 +517,15 @@ Linus Hagemann
 <h2>Exercise</h2>
 <p>What is the minimum, mean, and maximum body mass of a penguin in the <code>penguins</code> dataset?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href=""></a><span class="fu">min</span>(penguins<span class="sc">$</span>body_mass)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href=""></a><span class="fu">min</span>(penguins<span class="sc">$</span>body_mass, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2700</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href=""></a><span class="fu">mean</span>(penguins<span class="sc">$</span>body_mass)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] NA</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href=""></a><span class="fu">mean</span>(penguins<span class="sc">$</span>body_mass)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] NA</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href=""></a><span class="fu">max</span>(penguins<span class="sc">$</span>body_mass)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href=""></a><span class="fu">max</span>(penguins<span class="sc">$</span>body_mass)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] NA</code></pre>
 </div>
