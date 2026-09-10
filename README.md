@@ -27,7 +27,9 @@ If you missed the bootcamp or want to revisit some of the content, you can find 
 4. [Working with Dataframes with `dplyr`](05-dplyr/working-with-dataframes-with-dplyr.pdf): Covers the main `dplyr` verbs (functions) such as `filter()`, `select()`, `mutate()`, `summarize()`, and `group_by()`.
 5. [Vectors and Matrices](06-vectors-matrices/vectors-and-matrices.pdf): Overview of vectors and matrices in R. Unused in the exercises.
 
-## Cheatsheets
+## Cheatsheets 🤓
+
+During the bootcamp, I recommended the cheasheets on [`ggplot`](https://rstudio.github.io/cheatsheets/data-visualization.pdf) & [`dplyr`](https://rstudio.github.io/cheatsheets/data-transformation.pdf). More useful cheatsheets [here](https://rstudio.github.io/cheatsheets/).
 
 ## Exercises
 
@@ -36,9 +38,13 @@ The prerequisites (unless stated otherwise) are the [Intro to Data Visualization
 - [`dplyr` and `ggplot` with NYC Flights](Exercises/nyc-flights/nyc-flights.qmd): Practice using `dplyr` and `ggplot2` with a dataset of all flights departing NYC in 2013.
 - [Leader Assassination as a Natural Experiment](Exercises/leader-assassination/leader-assassination.qmd): Practice using `dplyr` and `ggplot2` to investigate the effects of leader assassinations on democracy and war. Adapted from [Quantiative Social Science: An Introduction with Tidyverse](https://press.princeton.edu/books/paperback/9780691222288/quantitative-social-science).
 
-## Sources
+## Sources & Acknowledgements
 
-This course borrows liberally from Simon Munzert's [Introduction to Data Science (IDS) course](https://github.com/intro-to-data-science-24/) as the bootcamp primarily serves as preparation for the course.
+All of the materials in here were prepared by [Jackson Luckey](https://www.jacksonmluckey.com/), with oly minor edits by me. Credit for the conceptualization of the bootcamp belongs to him.
+
+### Original Sources Section
+
+This course borrows liberally from Simon Munzert's [Introduction to Data Science (IDS) course](https://github.com/intro-to-data-science-25/) as the bootcamp primarily serves as preparation for the course.
 
 I also took inspiration, examples, and exercises from:
 
