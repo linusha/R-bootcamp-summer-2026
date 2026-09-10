@@ -17,6 +17,8 @@ This will be (partially) recorded.
 
 ## Who are you? 
 
+![](images/mentimeter_qr_code.png)
+
 ## Bootcamp Overview
 
 - two-day workshop, 9AM-4PM, with breaks and lunch
