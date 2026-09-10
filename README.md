@@ -4,7 +4,21 @@ Taught by [Linus Hagemann](http://linushagemann.de) at the [Hertie School in Ber
 
 Before the first day, please install `R` and `RStudio`, as well as `git`. I prepared a guide you can follow [here](IDS_Software_Setup.pdf).
 
-## Slides
+
+## Recordings 📺
+
+If you missed the bootcamp or want to revisit some of the content, you can find screencasts/recordings below. Please do not share them outside of the course.
+
+> [!IMPORTANT]
+> Only people from inside of Hertie can access these, so you'll need to be logged-in.
+
+1. [Introduction to `R`](https://hertieschool-my.sharepoint.com/:v:/g/personal/243854_students_hertie-school_org/IQBkFFvbVdDlSJAfOyJmfGgCAUZ5ak6J3gNwLJcKcjNwPrA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=49jD1N): Get to know your way around RStudio, execute your first commands, assign variables,...
+2. [Visualizations with `ggplot2`](https://hertieschool-my.sharepoint.com/:v:/g/personal/243854_students_hertie-school_org/IQA4z_7JcU9aT7f6HxCR7vnrAUk7MxXSL5Dxp92v8KsRiu0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=c0mxZq): Basics of visualizing data with `ggplot` and some 🐧.
+3. [Manipulating tabular data with `dplyr`](https://hertieschool-my.sharepoint.com/:v:/g/personal/243854_students_hertie-school_org/IQDMNdJfhAIsQKF6S9JaT2pmAUTNpt6osHDmO3xn5-JB5ic?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=wQ9chN): Dataframes, tabular data and how to manipulate it using `dplyr`. We covered the most important verbs such as `mutate`, `relocate`, `arrange`,`rename`, `group_by`, `summarize`,... 
+
+## Slides 💻
+
+
 
 1. [Overview](01-overview/bootcamp-overview.html): Overview of what we will cover during the bootcamp.
 2. [Git](02-git/git-intro.html): Introduces Git to get everyone to the point that they can use this repo throughout the bootcamp.
