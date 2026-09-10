@@ -1,4 +1,4 @@
-# Hertie School's 2026 Summer/Autumn R Bootcamp
+# Hertie School's 2026 R Bootcamp
 
 Taught by [Linus Hagemann](http://linushagemann.de) at the [Hertie School in Berlin](https://www.hertie-school.org/en/) in September 2026.
 
