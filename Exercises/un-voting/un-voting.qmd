@@ -1,6 +1,6 @@
 # UN Voting
 
-Source: Chapter 3 of [Quantiative Social Science: An Introduction with Tidyverse](https://press.princeton.edu/books/paperback/9780691222288/quantitative-social-science) with modifications and new exercises by [Jackson Luckey](www.jacksonmluckey.com) to shift the emphasis towards data science and away from causal inference and to include more opportunities to make plots and summary tables.
+Source: Chapter 3 of [Quantiative Social Science: An Introduction with Tidyverse](https://press.princeton.edu/books/paperback/9780691222288/quantitative-social-science) with modifications and new exercises by [Jackson Luckey](www.jacksonmluckey.com) to shift the emphasis towards data science and away from causal inference and to include more opportunities to make plots and summary tables. Minor clarifications and simplifications by [Linus Hagemann](www.linushagemann.de).
 
 ```{r}
 library(tidyverse)
@@ -18,18 +18,15 @@ In the analysis that follows, we measure state preferences in two ways. First, w
 
 2. Repeat this exercise with `PctAgreeUS` and `PctAgreeRUSSIA`.
 
-(Solutions also show how to get them both into the same plot).
-
 3. Create a new variable, `AgreeMoreUS`, that is `TRUE` when `PctAgreeUS` is greater than `PctAgreeRUSSIA`. Use `AgreeMoreUS` to create a new line plot showing what percentage of countries vote more with the US than Russia over time.
 
 4. Let's look at how `idealpoint` varies with `AgreeMoreUS` across all countries and years. Use a histogram. Then produce the same plot but only for the years 1980 and 2000 (about one decade before and after the fall of the Berlin Wall). How do the two variables relate to each other? How do they vary over time? Does their relationship to one another change over time?
 
-
-5. Calculate the percentage of votes where the US and Russia agree by year and create a line graph. How does this change over time? Are there clear temporal patterns?
+5. Plot the percentage of votes where the US and Russia agree by year using a line graph. How does this change over time? Are there clear temporal patterns?
 
 6. Calculate the number of years that each country voted more with the US than Russia. Which countries voted the most years with the US over Russia?
 
-END OF SOLUTIONS
+**For the tasks below, there are no example solutions.**
 
 Let's look at the former Soviet Union countries. I've provided a vector `former_soviet_union` that includes the names of all the countries in the former Soviet Union. You can use `%in%` inside `mutate()` or `filter()`, which returns `TRUE` when a value is in a vector and `FALSE` otherwise.
 

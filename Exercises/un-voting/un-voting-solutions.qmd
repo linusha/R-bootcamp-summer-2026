@@ -1,6 +1,6 @@
 # UN Voting
 
-Source: Chapter 3 of [Quantiative Social Science: An Introduction with Tidyverse](https://press.princeton.edu/books/paperback/9780691222288/quantitative-social-science) with modifications and new exercises by [Jackson Luckey](www.jacksonmluckey.com) to shift the emphasis towards data science and away from causal inference and to include more opportunities to make plots and summary tables.
+Source: Chapter 3 of [Quantiative Social Science: An Introduction with Tidyverse](https://press.princeton.edu/books/paperback/9780691222288/quantitative-social-science) with modifications and new exercises by [Jackson Luckey](www.jacksonmluckey.com) to shift the emphasis towards data science and away from causal inference and to include more opportunities to make plots and summary tables. Minor clarifications and simplifications by [Linus Hagemann](www.linushagemann.de).
 
 ```{r}
 library(tidyverse)
@@ -63,44 +63,6 @@ pct_agree_by_year |>
     )
 ```
 
-I'm also going to show you how to get both vote shares on the same plot. We are not covering `tidyr` in this bootcamp, but the `tidyr` function `pivot_longer()` allows us to take a "wide" dataset (data in columns) and "lengthen" it so that the information stored in the columns become rows.
-
-For example, look at the first 5 rows (1946-1950) of `pct_agree_by_year`. 
-
-```{r}
-pct_agree_by_year[1:5,]
-```
-
-Using `pivot_longer()` on the `US` and `Russia` columns, we get 10 rows: 5 for `US` and 5 for `Russia`.
-
-```{r}
-pivot_longer(
-    pct_agree_by_year[1:5,],
-    cols = c(US, Russia),
-    names_to = "country",
-    values_to = "pct_agree"
-)
-```
-
-We can use this to combine the two plots we made above into
-
-```{r}
-pivot_longer(
-    pct_agree_by_year,
-    cols = c(US, Russia),
-    names_to = "country",
-    values_to = "pct_agree"
-) |>
-    ggplot(aes(x = Year, y = pct_agree, color = country)) +
-    geom_line() +
-    theme_minimal() +
-    labs(
-        title = "Vote Share Agreement in UN by Year",
-        color = "Country",
-        y = "Percent of UN Votes"
-    )
-```
-
 3. Create a new variable, `AgreeMoreUS`, that is `TRUE` when `PctAgreeUS` is greater than `PctAgreeRUSSIA`. Use `AgreeMoreUS` to create a new line plot showing what percentage of countries vote more with the US than Russia over time.
 
 ```{r}
@@ -154,9 +116,11 @@ un |>
     )
 ```
 
-5. Calculate the percentage of votes where the US and Russia agree by year and create a line graph. How does this change over time? Are there clear temporal patterns?
+5. Plot the percentage of votes where the US and Russia agree by year using a line graph. How does this change over time? Are there clear temporal patterns?
 
 ```{r}
+# The key insight here is that agreement between US and RUSSIA is symmetrical.
+# Thus, the data is already there when subsetting for one and then using agreement percentage with the other.
 un |>
     filter(CountryAbb == "RUS") |>
     mutate(PctAgree = PctAgreeUS) |>
@@ -177,40 +141,3 @@ un |>
     summarise(YearsAgreeMoreUS = sum(AgreeMoreUS)) |>
     arrange(desc(YearsAgreeMoreUS))
 ```
-
-END OF SOLUTIONS
-
-Let's look at the former Soviet Union countries. I've provided a vector `former_soviet_union` that includes the names of all the countries in the former Soviet Union. You can use `%in%` inside `mutate()` or `filter()`, which returns `TRUE` when a value is in a vector and `FALSE` otherwise.
-
-```{r}
-former_soviet_union <- c(
-    "Estonia",
-    "Latvia",
-    "Lithuania",
-    "Belarus",
-    "Moldova",
-    "Ukraine",
-    "Armenia",
-    "Azerbaijian",
-    "Georgia",
-    "Kazakhstan",
-    "Kyrgyzstan",
-    "Tajikistan",
-    "Uzbekistan",
-    "Russia"
-)
-```
-
-For example
-
-```{r}
-c("Germany", "Ukraine") %in% former_soviet_union
-```
-
-7. Look at how `idealpoint` and voting shares have varied over time between countries in and out of the former Soviet Union. You can either produce separate line plots for countries in and out of the former Soviet Union or use `pivot_longer()` to create combined figures.
-
-8. Estonia, Latvia, and Lithuania are part of the European Union. Following the logic of the previous exercise, compare them to the other former Soviet Union countries since 1990. Consider other ways of grouping the former Soviet Union countries.
-
-9. One problem of using the percentage of votes that agree with the United States or Russia as a measure of state preferences is that the ideological positions, and consequently the voting patterns, of the two countries might themselves have changed over time. This makes it difficult to know which countries ideological positions have changed. Investigate this issue by plotting the evolution of the two countries' ideal points over time. Add the yearly median ideal point of all countries. How might the results of this analysis modify (or not) your interpretation of earlier analyses. (This question is almost verbatim from the textbook).
-
-10. We have just seen that while some post-Soviet countries have retained nonliberal ideologies, other post-Soviet countries were much more liberal in 2012. Let's examine how the median ideal points of Soviet/post-Soviet countries and all other countries has varied over all the years in the data. Plot these median ideal points by year. (This question is almost verbatim from the textbook).
