@@ -1,6 +1,6 @@
-# Hertie School's 2026 Summer R Bootcamp
+# Hertie School's 2026 Summer/Autumn R Bootcamp
 
-Taught by [Linus Hagemann](http://linushagemann.de) at the [Hertie School in Berlin](https://www.hertie-school.org/en/) in summer 2026.
+Taught by [Linus Hagemann](http://linushagemann.de) at the [Hertie School in Berlin](https://www.hertie-school.org/en/) in September 2026.
 
 Before the first day, please install `R` and `RStudio`, as well as `git`. I prepared a guide you can follow [here](IDS_Software_Setup.pdf).
 
