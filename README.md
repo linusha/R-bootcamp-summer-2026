@@ -18,25 +18,16 @@ If you missed the bootcamp or want to revisit some of the content, you can find 
 
 ## Slides 💻
 
+> [!NOTE]
+> I did not use all of these during the bootcamp. I still left them here, so that you can skim if you want. `Vectors and Matrices` we only partially covered.
 
+1. [Overview](01-overview/bootcamp-overview.pdf): Overview of what we will cover during the bootcamp.
+2. [Intro to R](03-R-intro/intro-to-r.pdf): Introduces the basics of base R (objects, vectors, functions, and dataframes).
+3. [Intro to Data Visualization](04-intro-to-data-viz/intro-to-data-viz.pdf): Introduces the basics of data visualization with R using ggplot2.
+4. [Working with Dataframes with `dplyr`](05-dplyr/working-with-dataframes-with-dplyr.pdf): Covers the main `dplyr` verbs (functions) such as `filter()`, `select()`, `mutate()`, `summarize()`, and `group_by()`.
+5. [Vectors and Matrices](06-vectors-matrices/vectors-and-matrices.pdf): Overview of vectors and matrices in R. Unused in the exercises.
 
-1. [Overview](01-overview/bootcamp-overview.html): Overview of what we will cover during the bootcamp.
-2. [Git](02-git/git-intro.html): Introduces Git to get everyone to the point that they can use this repo throughout the bootcamp.
-3. [Intro to R](03-R-intro/intro-to-R.html): Introduces the basics of base R (objects, vectors, functions, and dataframes).
-4. [Intro to Data Visualization](04-intro-to-data-viz/intro-to-data-viz.html): Introduces the basics of data visualization with R using ggplot2.
-5. [Working with Dataframes with `dplyr`](05-dplyr/working-with-dataframes-with-dplyr.html): Covers the main `dplyr` verbs (functions) such as `filter()`, `select()`, `mutate()`, `summarize()`, and `group_by()`.
-6. [Vectors and Matrices](06-vectors-matrices/vectors-and-matrices.html): Overview of vectors and matrices in R. Unused in the exercises but will be helpful for Math for Data Science.
-7. [Working with Dataframes in Base R](07-dataframes-base-R/working-with-dataframes-in-base-R.html): A quick look at working with Dataframes in base R. Useful for getting a sense of what `dplyr` replaces.
-
-### Slides from Intro to Data Science
-
-On Saturday and Sunday I used some slides from [an older version of the Intro to Data Science course](https://github.com/intro-to-data-science-24/lectures).
-
-On Saturday I used part of the [Tidyverse slides](https://github.com/intro-to-data-science-24/lectures/blob/main/00-tidyverse/00-tidyverse.pdf).
-
-On Sunday I used the [version control / Git slides](https://github.com/intro-to-data-science-24/lectures/blob/main/02-version-control/02-version-control.pdf).
-
-You might also look through the [command line slides](https://raw.githack.com/intro-to-data-science-24/lectures/main/13-command-line/13-command-line.pdf).
+## Cheatsheets
 
 ## Exercises
 
